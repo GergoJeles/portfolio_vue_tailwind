@@ -1,8 +1,18 @@
 {
-  "welcome": "Udvozollek a portfoliomon!",
-  "about": "Rólam",
-  "projects": "Projektek",
-  "gallery": "Galéria",
-  "contact": "Kapcsolat",
-  "home": "Kezdőoldal"
+  "navbar": {
+    "home": "Kezdőoldal",
+    "projects": "Projektek",
+    "photography": "Fotográfia",
+    "services": "Szolgáltatások",
+    "contact": "Kapcsolat"
+  },
+  "home": {},
+  "projects": {
+    "allCategories": "Minden kategória",
+    "webDevelopment": "Webfejlesztés",
+    "appDevelopment": "Alkalmazásfejlesztés"
+  },
+  "photography": {},
+  "services": {},
+  "contact": {}
 }

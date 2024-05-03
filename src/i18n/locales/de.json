@@ -1,8 +1,18 @@
 {
-  "welcome": "Willkommen auf meiner Portfolio-Website!",
-  "about": "Über mich",
-  "projects": "Projekte",
-  "gallery": "Galerie",
-  "contact": "Kontakt",
-  "home": "Startseite"
+  "navbar": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "photography": "Fotografie",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "home": {},
+  "projects": {
+    "allCategories": "Alle Kategorien",
+    "webDevelopment": "Web-Entwicklung",
+    "appDevelopment": "App-Entwicklung"
+  },
+  "photography": {},
+  "services": {},
+  "contact": {}
 }

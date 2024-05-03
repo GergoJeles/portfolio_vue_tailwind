@@ -1,8 +1,18 @@
 {
-  "welcome": "Welcome to my portfolio!",
-  "about": "About Me",
-  "projects": "Projects",
-  "gallery": "Gallery",
-  "contact": "Contact Me",
-  "home": "Home"
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "photography": "Photography",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {},
+  "projects": {
+    "allCategories": "All Categories",
+    "webDevelopment": "Web Development",
+    "appDevelopment": "App Development"
+  },
+  "photography": {},
+  "services": {},
+  "contact": {}
 }

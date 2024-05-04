@@ -6,7 +6,7 @@
         :to="`/`"
         class="flex items-center space-x-3 rtl:space-x-reverse">
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="@assets/images/G_J__1_-removebg-preview.png"
           class="h-8"
           alt="Flowbite Logo" />
         <span
@@ -14,6 +14,7 @@
           >Jeles.com</span
         >
       </router-link>
+
       <div
         class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
         <!-- Language Dropdown -->
@@ -23,8 +24,9 @@
             @click="open = !open"
             class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
             aria-haspopup="true"
-            :aria-expanded="open ? 'true' : 'false'">
-            <!-- Flag Icon -->
+            :aria-expanded="open ? 'true' : 'false'"
+            id="language-dropdown-menu">
+            <!-- Flag Icon (Replace this with your flag icons) -->
             <svg
               class="w-5 h-5 rounded-full me-3"
               aria-hidden="true"
@@ -36,14 +38,15 @@
             <!-- Language Name -->
             {{ $t(currentLanguage) }}
           </button>
+
           <!-- Dropdown -->
           <div
             x-show="open"
             @click.away="open = false"
             class="absolute right-0 mt-2 py-2 w-48 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-md z-10"
             role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="language-dropdown-menu">
+            aria-labelledby="language-dropdown-menu"
+            aria-orientation="vertical">
             <a
               href="#"
               v-for="(lang, index) in languages"
@@ -51,7 +54,7 @@
               @click="setLanguage(lang)"
               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
               role="menuitem">
-              <!-- Flag Icon -->
+              <!-- Flag Icon (Replace this with your flag icons) -->
               <svg
                 class="h-3.5 w-3.5 rounded-full me-2"
                 aria-hidden="true"
@@ -67,6 +70,7 @@
           </div>
         </div>
       </div>
+
       <div
         class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
         id="navbar-language">
@@ -77,7 +81,7 @@
               :to="`/`"
               class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
               aria-current="page"
-              >{{ $t("navbar.home") }}</router-link
+              >{{ $t("navbar.about") }}</router-link
             >
           </li>
           <li>
@@ -130,7 +134,8 @@ export default {
   methods: {
     setLanguage(lang) {
       this.currentLanguage = lang.name;
-      this.$i18n.locale = lang.name;
+      // Uncomment this line if you are using Vue I18n for language switching
+      // this.$i18n.locale = lang.name;
     },
   },
 };

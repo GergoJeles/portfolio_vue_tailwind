@@ -1,12 +1,12 @@
 {
   "navbar": {
-    "home": "Home",
+    "about": "About",
     "projects": "Projects",
     "photography": "Photography",
     "services": "Services",
     "contact": "Contact"
   },
-  "home": {},
+  "about": {},
   "projects": {
     "allCategories": "All Categories",
     "webDevelopment": "Web Development",

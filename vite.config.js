@@ -11,6 +11,7 @@ export default defineConfig({
       "@views": path.resolve(__dirname, "./src/views"), // Alias for the views directory
       "@components": path.resolve(__dirname, "./src/components"), // Alias for the components directory
       // Add more aliases as needed
+      "@assets": path.resolve(__dirname, "./src/assets"), // Alias for the views directory
     },
   },
 });

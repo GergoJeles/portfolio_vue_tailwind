@@ -1,12 +1,12 @@
 {
   "navbar": {
-    "home": "Kezdőoldal",
+    "about": "Rolam",
     "projects": "Projektek",
     "photography": "Fotográfia",
     "services": "Szolgáltatások",
     "contact": "Kapcsolat"
   },
-  "home": {},
+  "about": {},
   "projects": {
     "allCategories": "Minden kategória",
     "webDevelopment": "Webfejlesztés",

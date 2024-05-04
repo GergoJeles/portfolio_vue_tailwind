@@ -6,7 +6,7 @@ import Services from "@views/ServicesPage.vue";
 import Contact from "@views/ContactPage.vue";
 
 const routes = [
-  { path: "/home", component: Home },
+  { path: "/", component: Home },
   { path: "/projects", component: Projects },
   { path: "/photography", component: Photography },
   { path: "/services", component: Services },

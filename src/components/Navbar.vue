@@ -14,7 +14,6 @@
           >Jeles.com</span
         >
       </router-link>
-
       <div
         class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
         <!-- Language Dropdown -->
@@ -24,9 +23,8 @@
             @click="open = !open"
             class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
             aria-haspopup="true"
-            :aria-expanded="open ? 'true' : 'false'"
-            id="language-dropdown-menu">
-            <!-- Flag Icon (Replace this with your flag icons) -->
+            :aria-expanded="open ? 'true' : 'false'">
+            <!-- Flag Icon -->
             <svg
               class="w-5 h-5 rounded-full me-3"
               aria-hidden="true"
@@ -38,15 +36,14 @@
             <!-- Language Name -->
             {{ $t(currentLanguage) }}
           </button>
-
           <!-- Dropdown -->
           <div
             x-show="open"
             @click.away="open = false"
             class="absolute right-0 mt-2 py-2 w-48 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-md z-10"
             role="menu"
-            aria-labelledby="language-dropdown-menu"
-            aria-orientation="vertical">
+            aria-orientation="vertical"
+            aria-labelledby="language-dropdown-menu">
             <a
               href="#"
               v-for="(lang, index) in languages"
@@ -54,7 +51,7 @@
               @click="setLanguage(lang)"
               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
               role="menuitem">
-              <!-- Flag Icon (Replace this with your flag icons) -->
+              <!-- Flag Icon -->
               <svg
                 class="h-3.5 w-3.5 rounded-full me-2"
                 aria-hidden="true"
@@ -70,7 +67,6 @@
           </div>
         </div>
       </div>
-
       <div
         class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
         id="navbar-language">
@@ -134,8 +130,7 @@ export default {
   methods: {
     setLanguage(lang) {
       this.currentLanguage = lang.name;
-      // Uncomment this line if you are using Vue I18n for language switching
-      // this.$i18n.locale = lang.name;
+      this.$i18n.locale = lang.name;
     },
   },
 };
